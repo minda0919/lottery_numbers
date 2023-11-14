@@ -1,24 +1,37 @@
 # To do/include:
 # 1. *Randomly generate 6 numbers from 1-49
 # 2. *Numbers don't repeat
-# 3. Don't include numbers that appeared in last draw
+# 3. *Don't include numbers that appeared in last draw
 # 4. *Users can do multiple draws at once
-# 5. Upload to GitHub with README
+# 5. *Upload to GitHub with README
 # 6. Machine learning model to predict next numbers
 
 
 
 # Pseudocode:
 
-# Function to generate numbers
-Generate numbers:
-	Create list of numbers from 1 to 49
+# Function to generate lottery numbers
+gen_lotto_nums:
+	Create variable num_draws and set it to the number of draws specified by user
 
+	Create empty variable all_draws to store the current set of draws
 
+	FOR the specified number in num_draws:
+		Create empty variable current_draw to store the current draw
 
-Create a variable num_draws and set it to the number of draws specified by user
+		IF current draw is the first one:
+			Create empty variable last_draw to store the previous draw's numbers
 
-FOR the specified number in num_draws:
-	IF Create variable last_draw and set it to whatever the previous draw was
-	Randomly generate 6 nonrepeating numbers
-	Return list of all sets of drawn numbers
+		Create variable num_pool that contains numbers from 1 to 49
+
+		IF last_draw is NOT empty:
+			Remove numbers in last_draw from num_pool
+
+		Randomly generate 6 nonrepeating numbers from num_pool and set current_draw to that list of numbers
+		Set last_draw to current_draw
+		Add current_draw to all_draws
+		
+	Return all_draws
+
+# Function to predict winning numbers
+predict_lotto_nums:
