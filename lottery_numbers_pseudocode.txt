@@ -33,5 +33,10 @@ gen_lotto_nums:
 		
 	Return all_draws
 
-# Function to predict winning numbers
-predict_lotto_nums:
+# TO BE ADDED LATER
+# Function to predict next winning numbers
+# predict_lotto_nums:	
+# Ask user if they want to generate lottery numbers or predict the next winning numbers
+# Run the corresponding function
+
+Run gen_lotto_nums
