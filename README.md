@@ -2,7 +2,7 @@
 
 ### Based on In-Class Exercise 3 from MGTC28
 
-This is a program to generate Lotto 6/49 numbers.
+This is a Python script that generates Lotto 6/49 numbers.
 
 The program allows users to do one or more draws at once. Currently, the program can only generate numbers randomly.
 Users may use the generated numbers to pick ticket numbers when buying lottery tickets.
